@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=360, initial-scale=3.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosiles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./fonts/style.css">
+</head>
+
+<body>
+
+    <div class="mensaje">
+        <p>Por favor, abre esta simulación desde un dispositivo movil</p>
+    </div>
+
+
+    <div class="pantalla" id="crear-iniciar">
+        <div class="items-crear-iniciar">
+            <img src="./images/escudo.png" alt="">
+            <p class="p-frase">"Contribuye para un colegio mas <br> limpio, un clic a la vez"</p>
+            <div class="btn-crear-iniciar">
+                <button class="boton-primario">
+                    <a href="#crear">Crear una cuenta</a>
+                </button>  
+                <button class="boton-secundario">
+                    <a href="#iniciar">Iniciar sesión</a>
+                </button>
+            </div>
+        </div>       
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="pantalla" id="crear">
+        <div class="items-crear">
+            <h2>Crear cuenta</h2>
+            <div class="subitems-crear">
+                <p class="p-text-ayuda">Crea una cuenta para acceder a la toda la información <br> sobre como gestionar los residuos correctamente.</p>
+
+                <form class="form-container-crear">
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres" class="text-inputs" required>
+    
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="text-inputs" required>
+    
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="text-inputs" required>
+    
+                    <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" class="text-inputs" required>
+    
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="text-inputs" required>
+                </form>
+        
+                <div class="items-btn-crear">
+                    <button class="boton-primario">
+                    <a href="#inicio">Crear cuenta</a>
+                    </button>
+                    <p class="p-text-ayuda">Vincula tu cuenta de Google para iniciar sesión más rápido</p>
+                    <button class="boton-secundario">
+                        <a href="#">Continuar con Google</a>
+                    </button>
+                    <p class="p-text-ayuda">¿Ya tienes una cuenta? Iniciar sesión</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+<div class="pantalla" id="iniciar">
+    <div class="items-iniciar">
+        <h2>Iniciar sesión</h2>
+        <div class="subitems-iniciar">
+            <p class="p-text-ayuda">¿Nuevo en Ecosiles? Registrate ahora</p>
+
+            <form class="form-container-iniciar">
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="text-inputs" required>
+
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña (más de 8 caracteres)" class="text-inputs" required>
+                <p class="p-text-ayuda">¿Olvidaste tu contraseña?</p>
+            </form>
+    
+            <div class="items-btn-iniciar">
+                
+                <button class="boton-primario">
+                <a href="#inicio">Iniciar sesión</a>
+                </button>
+                <p class="p-text-ayuda">Si ya tienes una cuenta de Google vinculada</p>
+                <button class="boton-secundario">
+                    <a href="#">Continuar con Google</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------------------------------------- -->
+
+<div class="pantalla" id="inicio">
+    <div class="marca">
+        <img src="./images/escudo-mini.png" alt="">
+        <h3>Ecosiles</h3>
+    </div>
+    <h4>Reciclaje de residuos</h4>
+    <div class="grid-container">
+        <div class="grid-item item-plastico" id="">
+            <span class="icon-grid icon-plastico"></span>
+            <a class="text-boton" href="./plastico-si.html">Plástico y envases</a>
+        </div>
+        <div class="grid-item item-papel" id="">
+            <span class="icon-grid icon-papel"></span>
+            <a class="text-boton" href="#">Papel y cartón</a>
+        </div>
+        <div class="grid-item item-vidrio" id="">
+            <span class="icon-grid icon-vidrio"></span>
+            <a class="text-boton" href="#">Vidrio</a>
+        </div>
+        <div class="grid-item item-organico" id="">
+            <span class="icon-grid icon-organico"></span>
+            <a class="text-boton" href="#">Orgánico</a>
+        </div>
+        <div class="grid-item item-no-aprovechable" id="">
+            <span class="icon-grid-no icon-no"></span>
+            <a class="text-boton" href="#">No aprovechables</a>
+        </div>
+    </div>
+    <h4>También puedes</h4>
+    <div class="items-btn-inicio">
+               
+        <button class="boton-secundario">
+        <a href="#">Reducir</a>
+        </button>
+        <button class="boton-secundario">
+            <a href="#">Reutilizar</a>
+        </button>
+
+    </div>
+    <div class="menu">
+        <div class="pantalla-icon-inicio menu-item menu-inicio">
+            <span class="icon-menu icon-inicio"></span>
+            <p class="text-menu">Inicio</p>
+        </div>
+        <div class="menu-item menu-intercambio">
+            <span class="icon-menu icon-intercambio"></span>
+            <p class="text-menu">Intercambio</p>
+        </div>
+        <div class="menu-item menu-actividades">
+            <span class="icon-menu icon-actividades"></span>
+            <p class="text-menu">Actividades</p>
+        </div>
+        <div class="menu-item menu-perfil">
+            <span class="icon-menu icon-perfil"></span>
+            <p class="text-menu">Perfil</p>
+        </div>
+    </div>
+
+</div>
+    
+<!-- --------------------------------------------------------------- -->
+
+
+
+</body>
+</html>
+
